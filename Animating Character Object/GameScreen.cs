@@ -12,8 +12,10 @@ namespace Animating_Character_Object
 {
     public partial class GameScreen : UserControl
     {
-        public static List<string> monsterList, bulletList = new List<string>();
-        public static 
+        List<Monster> monsterList = new List<Monster>();      
+        List<Bullet> bulletList = new List<Bullet>();
+        List<PlayerObject> player = new List<PlayerObject>();
+       
         public GameScreen()
         {
             InitializeComponent();
