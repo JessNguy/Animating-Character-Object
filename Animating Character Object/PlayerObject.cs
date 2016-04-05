@@ -8,8 +8,13 @@ namespace Animating_Character_Object
 {
     class PlayerObject
     {
-        public PlayerObject()
+        public int x, y, size, speed;
+        public PlayerObject(int _x, int _y, int _size, int _speed)
         {
+            x = _x;
+            y = _y;
+            size = _size;
+            speed = _speed;
 
         }
     }

@@ -20,5 +20,10 @@ namespace Animating_Character_Object
         {
             InitializeComponent();
         }
+
+        private void GameScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

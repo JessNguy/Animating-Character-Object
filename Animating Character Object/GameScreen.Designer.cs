@@ -37,6 +37,7 @@
             this.BackColor = System.Drawing.Color.Blue;
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(500, 300);
+            this.Load += new System.EventHandler(this.GameScreen_Load);
             this.ResumeLayout(false);
 
         }
