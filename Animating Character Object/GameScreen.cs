@@ -14,11 +14,18 @@ namespace Animating_Character_Object
     {
         List<Monster> monsterList = new List<Monster>();      
         List<Bullet> bulletList = new List<Bullet>();
-        List<PlayerObject> player = new List<PlayerObject>();
+        PlayerObject player;
+
+        Image[] tempImages = new Image[] { Properties.Resources.IsaacRight,
+            Properties.Resources.IsaacLeft,
+            Properties.Resources.IsaacUp,
+            Properties.Resources.IsaacDown
+        };
        
         public GameScreen()
         {
             InitializeComponent();
+            player = new PlayerObject(4, 6, 5, 4, tempImages);
         }
 
         private void GameScreen_Load(object sender, EventArgs e)

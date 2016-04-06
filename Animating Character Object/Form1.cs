@@ -1,4 +1,12 @@
-﻿using System;
+﻿
+
+//Name :Jess Nguyen
+//Date Started : April 4, 2016
+//Date Finished : April 8, 2016 
+//Summary : A Game engine that uses classes, object animation and multi screens.
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

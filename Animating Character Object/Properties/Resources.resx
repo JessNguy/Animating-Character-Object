@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,58 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="IsaacDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAYAAAABmx/yAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAXVJREFUOE+NlOuVxCAIhS0nJVhGSkgJlDNlWEbKsAz/uXw88tid7Azn3CMCFwRN
+        yicRqTPUZ5FapkiZTWF7JUn9gohUJUMEJAHYwv1estqVdEWEnSIiszdQFSe5/ale57quZ4KmBpxDyaOL
+        6Z7IMUa3lbhbZTZJpGpTkMCShG52jWGAQTuJOEdvXiWIQ20cP1s4iPu+2xHyeBA5GpWcgC+qWQGqt1m6
+        BjYl0DgGYOSo7CR8rhMPrCrBmamRrfiRATq2jHFbyOv10orfEd3/S7IqSGLu8UXYXUSo1qPyHdu2TVEy
+        iPCQynCCSHZ92DkUdGtFfVVjguFS7QsQfcyeoOt+KAmgY8PnMfG1ZA/5BlmtqlbwE/SbLwdlxByE9aI9
+        +kVzVF5KNTs4Bqawq7DLVZA1e70ih+KnE+uZ/U2WZbEhWF/Zm/X3UWj+HT4IFQlkverhfhYeO4OxH1Xq
+        eQX/iU1Uvzn74/HriDXcz5IfNetVPy7epJQfj29ICwt+VCkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsaacLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAAaCAYAAABsONZfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAV5JREFUOE+NlGmxxSAMhSujEq6EyKiESkBCZVQGkpDBP16+hHS5t8s7MxmYksPJ
+        Rocr5Jxa3/4fkGp5IeYsrXRLaWhJhsa3z+dzTTwSiipgOYmaktVYp2n6JafuVLI7XRtRiJOThIITsXJy
+        DkXOPXxV8Q+hxp4icFGsRVeKYwQgqpST5xEOtWYlqOnqUXDuikYC3OIkN1fY1wh9I43jeFAK87xq30du
+        2EZa11UPPQTI4XAkRO5GElFnJdS8x28X9EtwptmnfADh4QjRCqAWyhAo1tajAB33kuO4q9FDCN3tDLuJ
+        0qtSSmq6zvNs++7yC5SWZWm5VCWWVmpVYnkmoWQ3d0eIomHehhaIvDxhJQxyPd1HhAL5GElbIU/hAUIj
+        JK8cJc+WZz++Bzng7H2iki9Pno5LbyS5vBbB58qN/wKE2/9DwOYriDbZTMbDNHjn/Sl8P/Pucg+fvZc8
+        DMPwB31T58VG1HiLAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="IsaacRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAAaCAYAAABsONZfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAVlJREFUOE+VlNuRwyAMRSnDJbgEynApKsdlUBJl+I/VQRLgrDfJaoYRse/RC5z0
+        zkqR5tvv7KrS/gXt+65AbpJTE0mt6p7FM5dMO46jFRUhxBdBLL5eQNGXCEz4e9ViHp0DPDBoZnDxuu+Z
+        REteQUrQ5nnBEMJHBVEN2gn1aC6+igK61Ecgg6XlW6YOWbOWaXpWhxTuABZ1G5jahdD3N0gzbdtmYNS6
+        gjMQYp5JO89zQhhQHGYXe3+jz1L6s5yXEpkOTQJG5D4MlgL8pjyVTujVIgPCRfwMcHhZs1F77PFcH4K4
+        bJoJrTcGQGn4yDpuw2pEjcicEVAA9DsOdrWAeha/FUyMCvgCXHa3AakQyG+A+qpHUT5AmokPsfqos05P
+        FHTZ3ca0VARgPZXnXp4MIX3YAOym+Ku/jfIA+v+FX623IOI4Hw41gI/ZIjqrfya6vioxjKzjTyWl9AMd
+        XPTCXkll/gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="IsaacUp" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA4AAAAaCAYAAACHD21cAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAVpJREFUOE+dk+GRxSAIhFNGSkgJlmUJryRLsoz88/gWML5MZu5yzOyAZhcRyXa3
+        VsuI8L219k8xws/n815crdxXp5ZSRi3bqHWTcMaCJXu6P6esRGL5gIuJb2Ky9VYN+DuqVWC4izI75YnY
+        6zgnmvx14naJ11LylLM7PKYS+3YXpohSnORese3nHoAnUe9dAp0G4uOJOOJL5Ahh02Itt9mdVZph7hmy
+        F2hcaB2bDcJnHOT5NPbOcCXEWJgbJUiTuAj5Bie4l+37PoCFIq1gDxzH8S3CdM8oBU8SiNqLpszGpEHS
+        h6hfg6Dn8MaxxjNBJJKI3yez+sj5aOH9/Rg3uu6J8frlemt2DxdywipMMWuSI6J8NBJmqZ79EnqyRWiN
+        gishluQnZAKEdBiuRKvpHoEsba4NQXu2JHtpIX465W7cYYoMMQC/m4+byhL89D+I/Wl8VhPsxeewbfsB
+        JWkrhSKk+rcAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>
