@@ -63,6 +63,16 @@ namespace Animating_Character_Object.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fireball {
+            get {
+                object obj = ResourceManager.GetObject("fireball", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IsaacDown {
             get {
                 object obj = ResourceManager.GetObject("IsaacDown", resourceCulture);
@@ -96,6 +106,46 @@ namespace Animating_Character_Object.Properties {
         internal static System.Drawing.Bitmap IsaacUp {
             get {
                 object obj = ResourceManager.GetObject("IsaacUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap monsterDown {
+            get {
+                object obj = ResourceManager.GetObject("monsterDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap monsterLeft {
+            get {
+                object obj = ResourceManager.GetObject("monsterLeft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap monsterRight {
+            get {
+                object obj = ResourceManager.GetObject("monsterRight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap monsterUp {
+            get {
+                object obj = ResourceManager.GetObject("monsterUp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

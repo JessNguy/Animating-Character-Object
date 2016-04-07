@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // GameScreen
@@ -38,10 +40,13 @@
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(500, 300);
             this.Load += new System.EventHandler(this.GameScreen_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameScreen_KeyUp);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer gameTimer;
     }
 }

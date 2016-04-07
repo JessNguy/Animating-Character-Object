@@ -35,33 +35,37 @@
             // 
             // buttonPlay
             // 
+            this.buttonPlay.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPlay.Font = new System.Drawing.Font("OCR A Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlay.Location = new System.Drawing.Point(183, 117);
+            this.buttonPlay.Location = new System.Drawing.Point(183, 116);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(117, 34);
             this.buttonPlay.TabIndex = 0;
             this.buttonPlay.Text = "Play";
-            this.buttonPlay.UseVisualStyleBackColor = true;
+            this.buttonPlay.UseVisualStyleBackColor = false;
             this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
             // 
             // buttonExit
             // 
+            this.buttonExit.BackColor = System.Drawing.Color.Red;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonExit.Font = new System.Drawing.Font("OCR A Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(183, 166);
+            this.buttonExit.Location = new System.Drawing.Point(432, 3);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(117, 34);
+            this.buttonExit.Size = new System.Drawing.Size(68, 22);
             this.buttonExit.TabIndex = 1;
             this.buttonExit.Text = "Exit";
-            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("OCR A Std", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(152, 75);
+            this.labelTitle.Font = new System.Drawing.Font("OCR A Std", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(146, 76);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(175, 22);
+            this.labelTitle.Size = new System.Drawing.Size(199, 25);
             this.labelTitle.TabIndex = 2;
             this.labelTitle.Text = "Game Engine";
             // 
@@ -69,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Crimson;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonPlay);

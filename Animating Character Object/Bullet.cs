@@ -10,19 +10,20 @@ namespace Animating_Character_Object
     class Bullet
     {
         public int x, y, size, speed;
-
         public string direction;
+        public Image fireBullet = Properties.Resources.fireball;
 
-        public Bullet(int _x, int _y, int _size, int _speed, string _direction)
+        public Bullet(int _x, int _y, int _size, int _speed, string _direction, Image _fireBullet)
         {
             x = _x;
             y = _y;
             size = _size;
             speed = _speed;
             direction = _direction;
-
+            fireBullet = _fireBullet;
         }
 
+        
         public void move(Bullet b)
         {
             if (b.direction == "left")
