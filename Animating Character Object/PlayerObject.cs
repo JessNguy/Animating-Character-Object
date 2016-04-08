@@ -10,15 +10,15 @@ namespace Animating_Character_Object
     class PlayerObject
     {
         public int x, y, size, speed;
-        public Image[] player = new Image[4];
+        public Image[] playerImages = new Image[4];
 
-        public PlayerObject(int _x, int _y, int _size, int _speed, Image[] _player)
+        public PlayerObject(int _x, int _y, int _size, int _speed, Image[] _playerImages)
         {
             x = _x;
             y = _y;
             size = _size;
             speed = _speed;
-            player = _player;
+            playerImages = _playerImages;
 
         }
 

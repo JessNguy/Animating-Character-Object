@@ -35,10 +35,11 @@
             // 
             // buttonPlay
             // 
-            this.buttonPlay.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonPlay.BackColor = System.Drawing.Color.Transparent;
             this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPlay.Font = new System.Drawing.Font("OCR A Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlay.Location = new System.Drawing.Point(183, 116);
+            this.buttonPlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonPlay.Location = new System.Drawing.Point(210, 170);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(117, 34);
             this.buttonPlay.TabIndex = 0;
@@ -48,10 +49,11 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.BackColor = System.Drawing.Color.Red;
+            this.buttonExit.BackColor = System.Drawing.Color.Transparent;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonExit.Font = new System.Drawing.Font("OCR A Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(432, 3);
+            this.buttonExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonExit.Location = new System.Drawing.Point(235, 220);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(68, 22);
             this.buttonExit.TabIndex = 1;
@@ -62,8 +64,10 @@
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
+            this.labelTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelTitle.Font = new System.Drawing.Font("OCR A Std", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(146, 76);
+            this.labelTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelTitle.Location = new System.Drawing.Point(167, 101);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(199, 25);
             this.labelTitle.TabIndex = 2;
@@ -74,6 +78,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
+            this.BackgroundImage = global::Animating_Character_Object.Properties.Resources.vector_circuit_board;
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonPlay);

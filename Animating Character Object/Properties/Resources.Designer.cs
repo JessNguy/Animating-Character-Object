@@ -73,6 +73,16 @@ namespace Animating_Character_Object.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gameBackground {
+            get {
+                object obj = ResourceManager.GetObject("gameBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IsaacDown {
             get {
                 object obj = ResourceManager.GetObject("IsaacDown", resourceCulture);
@@ -146,6 +156,16 @@ namespace Animating_Character_Object.Properties {
         internal static System.Drawing.Bitmap monsterUp {
             get {
                 object obj = ResourceManager.GetObject("monsterUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vector_circuit_board {
+            get {
+                object obj = ResourceManager.GetObject("vector_circuit_board", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -18,7 +18,7 @@ namespace Animating_Character_Object
             y = _y;
             size = _size;
             speed = _speed;
-            monster = _monster;
+            monster = _monster; 
 
          
 

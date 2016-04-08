@@ -11,7 +11,7 @@ namespace Animating_Character_Object
     {
         public int x, y, size, speed;
         public string direction;
-        public Image fireBullet = Properties.Resources.fireball;
+        public Image fireBullet;
 
         public Bullet(int _x, int _y, int _size, int _speed, string _direction, Image _fireBullet)
         {
